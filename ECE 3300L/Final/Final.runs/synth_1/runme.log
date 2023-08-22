@@ -1,0 +1,595 @@
+
+*** Running vivado
+    with args -log Lasers.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lasers.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Lasers.tcl -notrace
+Command: synth_design -top Lasers -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25128 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 717.406 ; gain = 177.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lasers' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HZ400ClkGen' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:436]
+INFO: [Synth 8-6155] done synthesizing module 'HZ400ClkGen' (1#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:436]
+INFO: [Synth 8-6157] synthesizing module 'HZ10ClkGen' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:406]
+INFO: [Synth 8-6155] done synthesizing module 'HZ10ClkGen' (2#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:406]
+INFO: [Synth 8-6157] synthesizing module 'HZ1ClkGen' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:376]
+INFO: [Synth 8-6155] done synthesizing module 'HZ1ClkGen' (3#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:376]
+INFO: [Synth 8-6157] synthesizing module 'upcounter3B' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:248]
+INFO: [Synth 8-6155] done synthesizing module 'upcounter3B' (4#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:248]
+INFO: [Synth 8-6157] synthesizing module 'HZ25ClkGen' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'HZ25ClkGen' (5#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:466]
+INFO: [Synth 8-6157] synthesizing module 'edge_detect_mealy' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:991]
+	Parameter zero bound to: 1'b0 
+	Parameter one bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:1003]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect_mealy' (6#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:991]
+INFO: [Synth 8-6157] synthesizing module 'upButton' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:1020]
+INFO: [Synth 8-6155] done synthesizing module 'upButton' (7#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:1020]
+INFO: [Synth 8-6157] synthesizing module 'numDecoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'numDecoder' (8#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:290]
+WARNING: [Synth 8-689] width (32) of port connection 'X' does not match port width (4) of module 'numDecoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:89]
+WARNING: [Synth 8-689] width (7) of port connection 'Y' does not match port width (8) of module 'numDecoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:89]
+WARNING: [Synth 8-689] width (32) of port connection 'X' does not match port width (4) of module 'numDecoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:90]
+WARNING: [Synth 8-689] width (7) of port connection 'Y' does not match port width (8) of module 'numDecoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:90]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:263]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (9#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:263]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:324]
+INFO: [Synth 8-226] default block is never used [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:329]
+WARNING: [Synth 8-567] referenced signal 'out0' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out1' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out2' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out3' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out4' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out5' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out6' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-567] referenced signal 'out7' should be on the sensitivity list [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:328]
+WARNING: [Synth 8-3848] Net out0 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:324]
+WARNING: [Synth 8-3848] Net out1 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:324]
+WARNING: [Synth 8-3848] Net out2 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:325]
+WARNING: [Synth 8-3848] Net out3 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:325]
+WARNING: [Synth 8-3848] Net out4 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:325]
+WARNING: [Synth 8-3848] Net out5 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:326]
+WARNING: [Synth 8-3848] Net out6 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:326]
+WARNING: [Synth 8-3848] Net out7 in module/entity display does not have driver. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'display' (10#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:324]
+INFO: [Synth 8-6157] synthesizing module 'game' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:107]
+WARNING: [Synth 8-6090] variable 'counter' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:228]
+WARNING: [Synth 8-5788] Register safe_reg in module game is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'game' (11#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:107]
+INFO: [Synth 8-6157] synthesizing module 'SongPlayer' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:945]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'OnionKing' [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:496]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter A4 bound to: 113636.363600 - type: float 
+	Parameter B4 bound to: 101239.167400 - type: float 
+	Parameter C4 bound to: 191109.582200 - type: float 
+	Parameter D4 bound to: 170264.932200 - type: float 
+	Parameter E4 bound to: 151685.228800 - type: float 
+	Parameter F4 bound to: 143172.121500 - type: float 
+	Parameter G4 bound to: 127551.020400 - type: float 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter A3 bound to: 227272.727300 - type: float 
+	Parameter B3 bound to: 202478.334800 - type: float 
+	Parameter C3 bound to: 382233.774200 - type: float 
+	Parameter D3 bound to: 340529.864500 - type: float 
+	Parameter E3 bound to: 303379.649300 - type: float 
+	Parameter F3 bound to: 286352.442600 - type: float 
+	Parameter G3 bound to: 255102.040800 - type: float 
+	Parameter A2 bound to: 454545.454500 - type: float 
+	Parameter B2 bound to: 404956.669600 - type: float 
+	Parameter C2 bound to: 764409.111800 - type: float 
+	Parameter D2 bound to: 681013.347900 - type: float 
+	Parameter E2 bound to: 606722.485100 - type: float 
+	Parameter F2 bound to: 572672.088000 - type: float 
+	Parameter G2 bound to: 510204.081600 - type: float 
+	Parameter A1 bound to: 909090.909100 - type: float 
+	Parameter B1 bound to: 809847.748600 - type: float 
+	Parameter C1 bound to: 1529051.988000 - type: float 
+	Parameter D1 bound to: 1362026.696000 - type: float 
+	Parameter E1 bound to: 1213592.233000 - type: float 
+	Parameter F1 bound to: 1145475.372000 - type: float 
+	Parameter G1 bound to: 1020408.163000 - type: float 
+	Parameter A0 bound to: 1818181.818000 - type: float 
+	Parameter B0 bound to: 1619695.497000 - type: float 
+	Parameter C0 bound to: 3058103.976000 - type: float 
+	Parameter D0 bound to: 2724795.640000 - type: float 
+	Parameter E0 bound to: 2427184.466000 - type: float 
+	Parameter F0 bound to: 2290426.019000 - type: float 
+	Parameter G0 bound to: 2040816.327000 - type: float 
+	Parameter A5 bound to: 56818.181200 - type: float 
+	Parameter B5 bound to: 50619.071240 - type: float 
+	Parameter C5 bound to: 95556.617300 - type: float 
+	Parameter D5 bound to: 85131.016630 - type: float 
+	Parameter E5 bound to: 75843.761850 - type: float 
+	Parameter F5 bound to: 71586.060760 - type: float 
+	Parameter G5 bound to: 63776.323680 - type: float 
+	Parameter A6 bound to: 28409.090910 - type: float 
+	Parameter B6 bound to: 25309.663740 - type: float 
+	Parameter C6 bound to: 47778.308650 - type: float 
+	Parameter D6 bound to: 42565.508320 - type: float 
+	Parameter E6 bound to: 37921.593310 - type: float 
+	Parameter F6 bound to: 35793.286610 - type: float 
+	Parameter G6 bound to: 31888.161840 - type: float 
+	Parameter A7 bound to: 14204.545450 - type: float 
+	Parameter B7 bound to: 12654.799840 - type: float 
+	Parameter C7 bound to: 23889.154320 - type: float 
+	Parameter D7 bound to: 21282.754160 - type: float 
+	Parameter E7 bound to: 18960.796660 - type: float 
+	Parameter F7 bound to: 17896.579250 - type: float 
+	Parameter G7 bound to: 15944.080920 - type: float 
+	Parameter A8 bound to: 7102.272727 - type: float 
+	Parameter B8 bound to: 6327.407927 - type: float 
+	Parameter C8 bound to: 11944.548630 - type: float 
+	Parameter D8 bound to: 10641.399730 - type: float 
+	Parameter E8 bound to: 9480.398328 - type: float 
+	Parameter F8 bound to: 8948.305638 - type: float 
+	Parameter G8 bound to: 7972.027749 - type: float 
+	Parameter AS2 bound to: 429037.240400 - type: float 
+	Parameter CS2 bound to: 721500.721500 - type: float 
+	Parameter DS2 bound to: 642838.776000 - type: float 
+	Parameter FS2 bound to: 540540.540500 - type: float 
+	Parameter GS2 bound to: 481556.390300 - type: float 
+	Parameter AS3 bound to: 214518.620200 - type: float 
+	Parameter CS3 bound to: 360776.390800 - type: float 
+	Parameter DS3 bound to: 321419.388000 - type: float 
+	Parameter FS3 bound to: 270270.270300 - type: float 
+	Parameter GS3 bound to: 240789.790500 - type: float 
+	Parameter AS4 bound to: 107259.310100 - type: float 
+	Parameter CS4 bound to: 180388.195400 - type: float 
+	Parameter DS4 bound to: 160704.528700 - type: float 
+	Parameter FS4 bound to: 135138.787500 - type: float 
+	Parameter GS4 bound to: 120394.895300 - type: float 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000110011 is unreachable [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:519]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000010011011 is unreachable [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:519]
+INFO: [Synth 8-6155] done synthesizing module 'OnionKing' (12#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:496]
+INFO: [Synth 8-6155] done synthesizing module 'SongPlayer' (13#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:945]
+INFO: [Synth 8-6155] done synthesizing module 'Lasers' (14#1) [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:23]
+WARNING: [Synth 8-3331] design Lasers has unconnected port start
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.766 ; gain = 241.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 781.766 ; gain = 241.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 781.766 ; gain = 241.727
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/constrs_1/new/C.xdc]
+WARNING: [Vivado 12-584] No ports matched '1'. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/constrs_1/new/C.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/constrs_1/new/C.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/constrs_1/new/C.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/constrs_1/new/C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lasers_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lasers_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 907.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 907.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 907.336 ; gain = 367.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 907.336 ; gain = 367.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 907.336 ; gain = 367.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'laserTiming_reg' in module 'game'
+INFO: [Synth 8-5546] ROM "duration" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/Vivado Projects/ECE 3300L/Final/Final.srcs/sources_1/new/Lasers.v:987]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              000 | 00000000000000000000000000000000
+                 iSTATE1 |                              001 | 00000000000000000000000000000001
+                 iSTATE2 |                              010 | 00000000000000000000000000000010
+                 iSTATE3 |                              011 | 00000000000000000000000000000011
+                 iSTATE4 |                              100 | 00000000000000000000000000000100
+                  iSTATE |                              101 | 00000000000000000000000000000101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'laserTiming_reg' using encoding 'sequential' in module 'game'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 907.336 ; gain = 367.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 9     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 7     
+	   2 Input      7 Bit        Muxes := 4     
+	 243 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	   4 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   7 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HZ400ClkGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module HZ10ClkGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module HZ1ClkGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module upcounter3B 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module HZ25ClkGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module edge_detect_mealy 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module upButton 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+Module Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module game 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   7 Input      7 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 11    
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 3     
+Module OnionKing 
+Detailed RTL Component Info : 
++---Muxes : 
+	 243 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module SongPlayer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP time12, operation Mode is: (A:0xf5e100)*B.
+DSP Report: operator time12 is absorbed into DSP time12.
+DSP Report: operator time12 is absorbed into DSP time12.
+WARNING: [Synth 8-3331] design Lasers has unconnected port start
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\up/pos_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\up/pos_reg[1]_C )
+WARNING: [Synth 8-3332] Sequential element (up/pos_reg[2]_C) is unused and will be removed from module Lasers.
+WARNING: [Synth 8-3332] Sequential element (up/pos_reg[1]_C) is unused and will be removed from module Lasers.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 907.336 ; gain = 367.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|OnionKing   | note           | 1024x20       | LUT            | 
+|SongPlayer  | number_reg_rep | 1024x20       | Block RAM      | 
++------------+----------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SongPlayer  | (A:0xf5e100)*B | 25     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/jammies/number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 933.863 ; gain = 393.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1000.344 ; gain = 460.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1001.352 ; gain = 461.313
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |   155|
+|3     |DSP48E1    |     1|
+|4     |LUT1       |    10|
+|5     |LUT2       |   150|
+|6     |LUT3       |   147|
+|7     |LUT4       |   191|
+|8     |LUT5       |    48|
+|9     |LUT6       |   368|
+|10    |RAMB36E1_1 |     1|
+|11    |FDCE       |    35|
+|12    |FDPE       |     3|
+|13    |FDRE       |   150|
+|14    |LDC        |     2|
+|15    |IBUF       |     5|
+|16    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------+------+
+|      |Instance        |Module              |Cells |
++------+----------------+--------------------+------+
+|1     |top             |                    |  1286|
+|2     |  debouncer     |HZ25ClkGen          |    51|
+|3     |  gamer         |game                |   241|
+|4     |  hz400Pog      |HZ400ClkGen         |    51|
+|5     |  jammies       |SongPlayer          |   824|
+|6     |  laserGen      |HZ10ClkGen          |    51|
+|7     |  mD            |edge_detect_mealy   |     3|
+|8     |  mM            |edge_detect_mealy_0 |     3|
+|9     |  mU            |edge_detect_mealy_1 |     4|
+|10    |  segmentSelect |upcounter3B         |    22|
+|11    |  up            |upButton            |    10|
++------+----------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1004.156 ; gain = 338.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1004.156 ; gain = 464.117
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1004.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1004.156 ; gain = 714.934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.156 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado Projects/ECE 3300L/Final/Final.runs/synth_1/Lasers.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Lasers_utilization_synth.rpt -pb Lasers_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  1 03:23:07 2020...

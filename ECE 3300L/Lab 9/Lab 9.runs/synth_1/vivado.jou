@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  3 02:05:02 2020
+# Process ID: 1208
+# Current directory: E:/Vivado Projects/ECE 3300L/Lab 9/Lab 9.runs/synth_1
+# Command line: vivado.exe -log L9.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source L9.tcl
+# Log file: E:/Vivado Projects/ECE 3300L/Lab 9/Lab 9.runs/synth_1/L9.vds
+# Journal file: E:/Vivado Projects/ECE 3300L/Lab 9/Lab 9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source L9.tcl -notrace

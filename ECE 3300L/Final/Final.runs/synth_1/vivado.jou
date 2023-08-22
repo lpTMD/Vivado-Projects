@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  1 03:22:11 2020
+# Process ID: 47396
+# Current directory: E:/Vivado Projects/ECE 3300L/Final/Final.runs/synth_1
+# Command line: vivado.exe -log Lasers.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lasers.tcl
+# Log file: E:/Vivado Projects/ECE 3300L/Final/Final.runs/synth_1/Lasers.vds
+# Journal file: E:/Vivado Projects/ECE 3300L/Final/Final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Lasers.tcl -notrace

@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Dec  1 03:24:17 2020
+| Host         : SHINRA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lasers_control_sets_placed.rpt
+| Design       : Lasers
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   106 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            7 |
+| No           | No                    | Yes                    |              10 |            7 |
+| No           | Yes                   | No                     |             135 |           36 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              28 |           13 |
+| Yes          | Yes                   | No                     |              10 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+---------------------------------------------+---------------------------------+------------------+----------------+
+|         Clock Signal         |                Enable Signal                |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------------------+---------------------------------------------+---------------------------------+------------------+----------------+
+|  debouncer/outSignalDebounce | mM/state_reg_i_1__0_n_0                     | resetALL_IBUF                   |                1 |              1 |
+|  debouncer/outSignalDebounce | mU/state_reg_i_1_n_0                        | resetALL_IBUF                   |                1 |              1 |
+|  debouncer/outSignalDebounce | mD/state_reg_i_1__1_n_0                     | resetALL_IBUF                   |                1 |              1 |
+|  mM/state_reg_reg_0          |                                             | mU/state_reg_reg_0              |                1 |              1 |
+|  mU/state_reg_reg_0          |                                             | mM/state_reg_reg_0              |                1 |              1 |
+|  mD/state_reg_reg_0          |                                             | mM/state_reg_reg_0              |                1 |              1 |
+|  mD/state_reg_reg_0          |                                             | mU/state_reg_reg_1              |                1 |              1 |
+|  mD/state_reg_reg_0          |                                             | mU/state_reg_reg_0              |                1 |              1 |
+|  hz400Pog/CLK                |                                             | resetALL_IBUF                   |                2 |              3 |
+|  signal10_BUFG               |                                             |                                 |                3 |              3 |
+|  clock_IBUF_BUFG             |                                             |                                 |                4 |              4 |
+|  signal10_BUFG               |                                             | resetALL_IBUF                   |                2 |              4 |
+|  signal10_BUFG               | gamer/counter[6]_i_1_n_0                    | resetALL_IBUF                   |                3 |              7 |
+|  clock_IBUF_BUFG             | jammies/E[0]                                | gamer/SR[0]                     |                8 |             10 |
+|  signal10_BUFG               | gamer/FSM_sequential_laserTiming[2]_i_1_n_0 | resetALL_IBUF                   |                7 |             18 |
+|  clock_IBUF_BUFG             |                                             | gamer/play_reg_1                |                5 |             20 |
+|  clock_IBUF_BUFG             |                                             | laserGen/counter[0]_i_1__0_n_0  |                7 |             27 |
+|  clock_IBUF_BUFG             |                                             | debouncer/counter[0]_i_1__1_n_0 |                7 |             27 |
+|  clock_IBUF_BUFG             |                                             | hz400Pog/counter[0]_i_1_n_0     |                7 |             27 |
+|  clock_IBUF_BUFG             |                                             | gamer/play_reg_2                |                8 |             32 |
++------------------------------+---------------------------------------------+---------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 20 05:02:43 2020
+# Process ID: 6320
+# Current directory: E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.runs/synth_1
+# Command line: vivado.exe -log SongPlayer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SongPlayer.tcl
+# Log file: E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.runs/synth_1/SongPlayer.vds
+# Journal file: E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SongPlayer.tcl -notrace
+Command: synth_design -top SongPlayer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14688 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 717.207 ; gain = 178.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SongPlayer' [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/sources_1/new/SongPlayer.v:23]
+	Parameter clockFrequency bound to: 100000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MusicSheet' [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/sources_1/new/SongPlayer.v:69]
+	Parameter EIGHTH bound to: 5'b00001 
+	Parameter QUARTER bound to: 5'b00010 
+	Parameter HALF bound to: 5'b00100 
+	Parameter ONE bound to: 8 - type: integer 
+	Parameter TWO bound to: 16 - type: integer 
+	Parameter FOUR bound to: 32 - type: integer 
+	Parameter A4 bound to: 113636.363600 - type: float 
+	Parameter B4 bound to: 101239.167400 - type: float 
+	Parameter C4 bound to: 191109.582200 - type: float 
+	Parameter D4 bound to: 170264.932200 - type: float 
+	Parameter E4 bound to: 151685.228800 - type: float 
+	Parameter F4 bound to: 143172.121500 - type: float 
+	Parameter G4 bound to: 127551.020400 - type: float 
+	Parameter SP bound to: 1 - type: integer 
+	Parameter A3 bound to: 227272.727300 - type: float 
+	Parameter B3 bound to: 202478.334800 - type: float 
+	Parameter C3 bound to: 382233.774200 - type: float 
+	Parameter D3 bound to: 340529.864500 - type: float 
+	Parameter E3 bound to: 303379.649300 - type: float 
+	Parameter F3 bound to: 286352.442600 - type: float 
+	Parameter G3 bound to: 255102.040800 - type: float 
+	Parameter A2 bound to: 454545.454500 - type: float 
+	Parameter B2 bound to: 404956.669600 - type: float 
+	Parameter C2 bound to: 764409.111800 - type: float 
+	Parameter D2 bound to: 681013.347900 - type: float 
+	Parameter E2 bound to: 606722.485100 - type: float 
+	Parameter F2 bound to: 572672.088000 - type: float 
+	Parameter G2 bound to: 510204.081600 - type: float 
+	Parameter A1 bound to: 909090.909100 - type: float 
+	Parameter B1 bound to: 809847.748600 - type: float 
+	Parameter C1 bound to: 1529051.988000 - type: float 
+	Parameter D1 bound to: 1362026.696000 - type: float 
+	Parameter E1 bound to: 1213592.233000 - type: float 
+	Parameter F1 bound to: 1145475.372000 - type: float 
+	Parameter G1 bound to: 1020408.163000 - type: float 
+	Parameter A0 bound to: 1818181.818000 - type: float 
+	Parameter B0 bound to: 1619695.497000 - type: float 
+	Parameter C0 bound to: 3058103.976000 - type: float 
+	Parameter D0 bound to: 2724795.640000 - type: float 
+	Parameter E0 bound to: 2427184.466000 - type: float 
+	Parameter F0 bound to: 2290426.019000 - type: float 
+	Parameter G0 bound to: 2040816.327000 - type: float 
+	Parameter A5 bound to: 56818.181200 - type: float 
+	Parameter B5 bound to: 50619.071240 - type: float 
+	Parameter C5 bound to: 95556.617300 - type: float 
+	Parameter D5 bound to: 85131.016630 - type: float 
+	Parameter E5 bound to: 75843.761850 - type: float 
+	Parameter F5 bound to: 71586.060760 - type: float 
+	Parameter G5 bound to: 63776.323680 - type: float 
+	Parameter A6 bound to: 28409.090910 - type: float 
+	Parameter B6 bound to: 25309.663740 - type: float 
+	Parameter C6 bound to: 47778.308650 - type: float 
+	Parameter D6 bound to: 42565.508320 - type: float 
+	Parameter E6 bound to: 37921.593310 - type: float 
+	Parameter F6 bound to: 35793.286610 - type: float 
+	Parameter G6 bound to: 31888.161840 - type: float 
+	Parameter A7 bound to: 14204.545450 - type: float 
+	Parameter B7 bound to: 12654.799840 - type: float 
+	Parameter C7 bound to: 23889.154320 - type: float 
+	Parameter D7 bound to: 21282.754160 - type: float 
+	Parameter E7 bound to: 18960.796660 - type: float 
+	Parameter F7 bound to: 17896.579250 - type: float 
+	Parameter G7 bound to: 15944.080920 - type: float 
+	Parameter A8 bound to: 7102.272727 - type: float 
+	Parameter B8 bound to: 6327.407927 - type: float 
+	Parameter C8 bound to: 11944.548630 - type: float 
+	Parameter D8 bound to: 10641.399730 - type: float 
+	Parameter E8 bound to: 9480.398328 - type: float 
+	Parameter F8 bound to: 8948.305638 - type: float 
+	Parameter G8 bound to: 7972.027749 - type: float 
+	Parameter AS2 bound to: 429037.240400 - type: float 
+	Parameter CS2 bound to: 721500.721500 - type: float 
+	Parameter DS2 bound to: 642838.776000 - type: float 
+	Parameter FS2 bound to: 540540.540500 - type: float 
+	Parameter GS2 bound to: 481556.390300 - type: float 
+	Parameter AS3 bound to: 214518.620200 - type: float 
+	Parameter CS3 bound to: 360776.390800 - type: float 
+	Parameter DS3 bound to: 321419.388000 - type: float 
+	Parameter FS3 bound to: 270270.270300 - type: float 
+	Parameter GS3 bound to: 240789.790500 - type: float 
+	Parameter AS4 bound to: 107259.310100 - type: float 
+	Parameter CS4 bound to: 180388.195400 - type: float 
+	Parameter DS4 bound to: 160704.528700 - type: float 
+	Parameter FS4 bound to: 135138.787500 - type: float 
+	Parameter GS4 bound to: 120394.895300 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'MusicSheet' (1#1) [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/sources_1/new/SongPlayer.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'SongPlayer' (2#1) [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/sources_1/new/SongPlayer.v:23]
+WARNING: [Synth 8-3917] design SongPlayer has port aud_sd driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.957 ; gain = 242.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.957 ; gain = 242.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 780.957 ; gain = 242.090
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/constrs_1/new/bb.xdc]
+Finished Parsing XDC File [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/constrs_1/new/bb.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/constrs_1/new/bb.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SongPlayer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SongPlayer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 895.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 895.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.srcs/sources_1/new/SongPlayer.v:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SongPlayer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design SongPlayer has port aud_sd driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|MusicSheet  | note           | 1024x20       | LUT            | 
+|MusicSheet  | duration       | 1024x3        | LUT            | 
+|SongPlayer  | number_reg_rep | 1024x3        | Block RAM      | 
+|SongPlayer  | number_reg_rep | 1024x20       | Block RAM      | 
++------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance time120/number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 895.242 ; gain = 356.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance number_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance number_reg_rep__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |   105|
+|3     |LUT1       |    19|
+|4     |LUT2       |   122|
+|5     |LUT3       |    75|
+|6     |LUT4       |   154|
+|7     |LUT5       |    51|
+|8     |LUT6       |    87|
+|9     |RAMB18E1   |     1|
+|10    |RAMB36E1_1 |     1|
+|11    |FDRE       |    63|
+|12    |IBUF       |     3|
+|13    |OBUF       |     2|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   684|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 932.457 ; gain = 393.590
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 932.457 ; gain = 279.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 932.457 ; gain = 393.590
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 934.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 934.328 ; gain = 640.430
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 934.328 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado Projects/ECE 3300L/Lab_8/Lab_8.runs/synth_1/SongPlayer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SongPlayer_utilization_synth.rpt -pb SongPlayer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 05:03:19 2020...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 15 17:03:28 2020
+# Process ID: 40840
+# Current directory: E:/Vivado Projects/ECE 3300/SeqDetector/SeqDetector.runs/impl_1
+# Command line: vivado.exe -log Ba.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Ba.tcl -notrace
+# Log file: E:/Vivado Projects/ECE 3300/SeqDetector/SeqDetector.runs/impl_1/Ba.vdi
+# Journal file: E:/Vivado Projects/ECE 3300/SeqDetector/SeqDetector.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Ba.tcl -notrace

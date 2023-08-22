@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado Projects/ECE 3300/Oct12/Oct12.srcs/sources_1/new/ShiftReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado Projects/ECE 3300/Oct12/Oct12.srcs/sim_1/new/Sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sim

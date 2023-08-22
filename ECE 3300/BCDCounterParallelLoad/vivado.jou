@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 25 13:27:50 2020
+# Process ID: 1452
+# Current directory: E:/Vivado Projects/ECE 3300/BCDCounterParallelLoad
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30708 E:\Vivado Projects\ECE 3300\BCDCounterParallelLoad\project_1.xpr
+# Log file: E:/Vivado Projects/ECE 3300/BCDCounterParallelLoad/vivado.log
+# Journal file: E:/Vivado Projects/ECE 3300/BCDCounterParallelLoad\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Vivado Projects/ECE 3300/BCDCounterParallelLoad/project_1.xpr}
+update_compile_order -fileset sources_1
+
+launch_simulation
+source simmy.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source simmy.tcl
+close_sim

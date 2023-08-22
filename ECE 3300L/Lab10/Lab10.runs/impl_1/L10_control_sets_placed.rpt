@@ -1,0 +1,127 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Nov  2 23:07:48 2020
+| Host         : SHINRA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file L10_control_sets_placed.rpt
+| Design       : L10
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    49 |
+|    Minimum number of control sets                        |    49 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   310 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    49 |
+| >= 0 to < 4        |    40 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |              32 |           24 |
+| No           | Yes                   | No                     |             145 |           46 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               9 |            9 |
+| Yes          | Yes                   | No                     |              20 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------------+-----------------------------------+------------------+----------------+
+|         Clock Signal         |         Enable Signal         |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------------+-----------------------------------+------------------+----------------+
+|  noel/min_reg[0]_1           |                               | noel/min_reg[0]_0                 |                1 |              1 |
+|  noel/min_reg[4]_1           |                               | noel/min_reg[4]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[4]_1                 |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[1]_1                 |                1 |              1 |
+|  noel/min_reg[1]_1           |                               | noel/min_reg[1]_0                 |                1 |              1 |
+|  noel/min_reg[2]_1           |                               | noel/min_reg[2]_0                 |                1 |              1 |
+|  noel/min_reg[3]_1           |                               | noel/min_reg[3]_0                 |                1 |              1 |
+|  rushia/sec_reg[0]_1         |                               | rushia/sec_reg[0]_0               |                1 |              1 |
+|  rushia/sec_reg[1]_1         |                               | rushia/sec_reg[1]_0               |                1 |              1 |
+|  noel/min_reg[5]_1           |                               | noel/min_reg[5]_0                 |                1 |              1 |
+|  rushia/sec_reg[3]_1         |                               | rushia/sec_reg[3]_0               |                1 |              1 |
+|  rushia/sec_reg[2]_1         |                               | rushia/sec_reg[2]_0               |                1 |              1 |
+|  rushia/sec_reg[5]_0         |                               | rushia/sec_reg[5]_1               |                1 |              1 |
+|  rushia/sec_reg[4]_1         |                               | rushia/sec_reg[4]_0               |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[2]_1                 |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[3]_1                 |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[5]_1                 |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | reset_IBUF                        |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[4]_0                 |                1 |              1 |
+|  debouncer/outSignalDebounce | minuteUp/state_reg_i_1__0_n_0 | resetALL_IBUF                     |                1 |              1 |
+|  debouncer/outSignalDebounce | secondUp/state_reg_i_1_n_0    | resetALL_IBUF                     |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[0]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[1]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[2]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[2]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[3]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[0]_1               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[1]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[0]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[1]_1               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | noel/min_reg[5]_0                 |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[3]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[3]_1               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[2]_1               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[5]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[4]_0               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[5]_1               |                1 |              1 |
+|  timeClock/outsignalClock    |                               | rushia/sec_reg[4]_1               |                1 |              1 |
+|  timeClock/outsignalClock    | pog/min[5]_P_i_1_n_0          | noel/min_reg[0]_1                 |                1 |              1 |
+|  selectClock/CLK             |                               | resetALL_IBUF                     |                2 |              2 |
+|  clock_IBUF_BUFG             |                               |                                   |                4 |              4 |
+|  minuteUp/state_reg_reg_0    |                               | resetALL_IBUF                     |                2 |              6 |
+|  secondUp/state_reg_reg_0    |                               | resetALL_IBUF                     |                2 |              6 |
+|  clock_IBUF_BUFG             |                               | pog/playSong_reg_1                |                5 |             20 |
+|  clock_IBUF_BUFG             | jammies/E[0]                  | pog/SR[0]                         |               11 |             20 |
+|  clock_IBUF_BUFG             |                               | timeClock/counter[0]_i_1_n_0      |                7 |             27 |
+|  clock_IBUF_BUFG             |                               | selectClock/counter[0]_i_1__0_n_0 |                7 |             27 |
+|  clock_IBUF_BUFG             |                               | debouncer/counter[0]_i_1__1_n_0   |                7 |             27 |
+|  clock_IBUF_BUFG             |                               | pog/playSong_reg_2                |                8 |             32 |
++------------------------------+-------------------------------+-----------------------------------+------------------+----------------+
+
+

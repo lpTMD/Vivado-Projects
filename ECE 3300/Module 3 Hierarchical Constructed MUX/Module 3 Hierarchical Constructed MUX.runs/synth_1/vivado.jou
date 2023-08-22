@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep 12 12:52:30 2020
+# Process ID: 15476
+# Current directory: E:/Vivado Projects/ECE 3300/Module 3 Hierarchical Constructed MUX/Module 3 Hierarchical Constructed MUX.runs/synth_1
+# Command line: vivado.exe -log mux16to1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux16to1.tcl
+# Log file: E:/Vivado Projects/ECE 3300/Module 3 Hierarchical Constructed MUX/Module 3 Hierarchical Constructed MUX.runs/synth_1/mux16to1.vds
+# Journal file: E:/Vivado Projects/ECE 3300/Module 3 Hierarchical Constructed MUX/Module 3 Hierarchical Constructed MUX.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux16to1.tcl -notrace

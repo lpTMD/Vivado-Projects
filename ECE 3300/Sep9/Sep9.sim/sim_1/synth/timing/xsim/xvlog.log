@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado Projects/ECE 3300/Sep9/Sep9.sim/sim_1/synth/timing/xsim/MUX_sim_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado Projects/ECE 3300/Sep9/Sep9.srcs/sim_1/new/MUX_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_sim
